@@ -7,10 +7,10 @@ import os
 
 #Need firefox/chrome driver for selenium
 #Get path to firefox driver
-firefox_path = r"D:/Network Share/Contributions/geckodriver.exe"
+firefox_path = r"PATH/To/Gecko/Driver"
 #This never changes unless you change campaigns
 #Path to the journal containing the JSON of the players
-path_to_external_journal = r"https://app.roll20.net/campaigns/journal/4588469/handout/-Lg30Ok5N2Xe2JO55c0n"
+path_to_external_journal = r"URL/For/External/Journal"
 
 #Define webdriver with path
 driver = webdriver.Firefox()
@@ -156,7 +156,7 @@ def main():
 		#if window is not open
 		else:
 			#Open URL to roll20 handout
-			driver.get("https://app.roll20.net/campaigns/journal/4588469/handout/-Lg30Ok5N2Xe2JO55c0n")
+			driver.get("URL/For/External/Journal/On/Roll20")
 			varJSON = ""
 			time.sleep(5)
 
